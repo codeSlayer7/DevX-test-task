@@ -17,7 +17,7 @@ export default function CardItem({ card }: Props) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getServerSideProps = async (context:any) => {
   let id = context?.params?.id;
 
   if (typeof id === "string") {
